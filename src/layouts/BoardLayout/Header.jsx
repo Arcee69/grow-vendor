@@ -35,7 +35,7 @@ const Header = () => {
   return (
     <div className='bg-[#fff] shadow-lg  flex  px-[24px] py-[18px] '>
 
-        <div className='w-full flex items-center justify-between'>
+        <div className='w-full flex items-center justify-between '>
             <div className='rounded-lg border border-[#E1E3E2] p-2 gap-2 w-[662px] flex items-center'>
                 <img src={Search} alt='Search' />
                 <input 
@@ -67,7 +67,7 @@ const Header = () => {
                             leaveFrom="opacity-100"
                             leaveTo="opacity-0"
                         >
-                            <Listbox.Options className="absolute z-10 mt-1 w-[100px] mr-24 max-h-60  overflow-auto rounded-md bg-white py-1 text-base shadow-lg ring-1 ring-black/5 focus:outline-none sm:text-sm">
+                            <Listbox.Options className="absolute z-10 mt-1 w-[120px] -ml-[100px] max-h-60  rounded-md bg-white py-1 text-base shadow-lg ring-1 ring-black/5 focus:outline-none sm:text-sm">
                                 {navigation.map((item, index) => (
                                     <Listbox.Option
                                         key={index}
